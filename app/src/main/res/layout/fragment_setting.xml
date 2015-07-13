@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intohotel.fragment.WarmPressingFragment"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/status_bar_layout"
+        style="@style/WidthFillStyle"
+        android:layout_below="@id/warm_pressing_title_text"
+        android:background="#efefed"
+        android:padding="15dp">
+
+        <include layout="@layout/view_status_bar" />
+    </RelativeLayout>
+
+    <Button
+        style="@style/WidthFillStyle"
+        android:id="@+id/device_btn"
+        android:background="#0093dd"
+        android:text="附近的设备"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/status_bar_layout"/>
+    <TextView style="@style/Text.LargeFonts"
+        android:text="系统设置"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

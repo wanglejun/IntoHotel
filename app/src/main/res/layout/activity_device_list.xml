@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.intohotel.activity.DeviceListActivity"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title_bar_layout"
+        layout="@layout/view_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/status_bar_layout"
+        style="@style/WidthFillStyle"
+        android:layout_below="@id/title_bar_layout"
+        android:background="#efefed"
+        android:padding="15dp">
+
+        <include layout="@layout/view_status_bar" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/device_listview"
+        style="@style/WidthFillStyle"
+        android:layout_below="@id/status_bar_layout"
+        android:cacheColorHint="#00000000" />
+
+    <Button
+        style="@style/WidthFillStyle"
+        android:id="@+id/scanning_btn"
+        android:layout_alignParentBottom="true"
+        android:background="#0093dd"
+        android:text="重新扫描"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"/>
+</RelativeLayout>

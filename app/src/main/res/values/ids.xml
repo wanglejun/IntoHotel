@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="getConnection" type="id">连接设备</item>
+    <item name="getDeviceNum" type="id">获取设备号</item>
+    <item name="getBatt" type="id">获取电量</item>
+    <item name="getTemp" type="id">获取温度</item>
+    <item name="getHpa" type="id">查询H压力值</item>
+    <item name="getLpa" type="id">查询L压力值</item>
+    <item name="getComprehensive" type="id">查询综合数据</item>
+</resources>

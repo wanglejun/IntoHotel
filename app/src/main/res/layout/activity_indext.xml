@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.intohotel.activity.IndextActivity">
+
+    <include
+        android:id="@+id/title_bar_layout"
+        layout="@layout/view_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/status_layout"
+        style="@style/WidthFillStyle"
+        android:layout_below="@id/title_bar_layout"
+        android:background="#efefed"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/warm_pressing_title_text"
+            style="@style/Text.BigFonts"
+            android:layout_centerHorizontal="true"
+            android:text="@string/warm_pressing_title"
+            android:textColor="#0a5ea4"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            style="@style/WidthFillStyle"
+            android:layout_below="@id/warm_pressing_title_text"
+            android:layout_marginTop="10dp">
+
+            <include layout="@layout/view_status_bar" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/WrapContentStyle"
+        android:layout_below="@id/status_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:id="@+id/warm_pressing_layout"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="2dp"
+            android:background="#34acbd"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/warm_pressing_image"
+                style="@style/WrapContentStyle"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_warm_pressing_noraml" />
+
+            <TextView
+                style="@style/Text.BigFonts"
+                android:layout_below="@id/warm_pressing_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/main_warm_pressing"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_valve_layout"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/warm_pressing_layout"
+            android:background="#e05d91"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/single_valve_image"
+                style="@style/WrapContentStyle"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_single_valve_normal" />
+
+            <TextView
+                style="@style/Text.BigFonts"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_single_valve"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/single_valve_image"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/system_valve_layout"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/warm_pressing_layout"
+            android:layout_margin="2dp"
+            android:background="#85c226"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/system_valve_image"
+                style="@style/WrapContentStyle"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_system_valve_normal" />
+            <TextView
+                style="@style/Text.BigFonts"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_system"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/system_valve_image"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/warm_pressing_layout"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/system_valve_layout"
+            android:background="#76c5f0"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/setting_image"
+                style="@style/WrapContentStyle"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_setting_normal" />
+            <TextView
+                style="@style/Text.BigFonts"
+                android:layout_centerHorizontal="true"
+                android:text="@string/main_setting"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/setting_image"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

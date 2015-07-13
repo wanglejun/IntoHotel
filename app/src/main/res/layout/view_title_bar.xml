@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapContentStyle" >
+
+    <RelativeLayout
+        style="@style/WidthFillStyle"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/tab_bar_bg" >
+
+        <ImageView
+            style="@style/WrapContentStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/img_logo"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/title_bar_text"
+            style="@style/Text.BigFonts"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/title_bar_back_btn"
+            style="@style/WrapContentStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/tab_bar_bg"
+            android:drawableLeft="@mipmap/btn_back"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:onClick="backBtnOnclick"
+            android:padding="10dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        
+        <TextView android:id="@+id/title_bar_right_btn"
+            style="@style/WrapContentStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="@color/tab_bar_bg"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

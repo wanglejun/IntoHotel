@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WrapContentStyle"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:minWidth="250dip"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/custom_title_layout"
+        style="@style/WidthFillStyle"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/custom_title_text"
+            style="@style/Text.BigFonts"
+            android:textColor="@color/dark_bule" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#b9b9b9" />
+
+    <LinearLayout
+        android:id="@+id/custom_content_layout"
+        style="@style/WidthFillStyle"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/custom_dialog_content_text"
+            style="@style/Text.MiddleFonts"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#d3d3d3" />
+
+    <LinearLayout
+        style="@style/WidthFillStyle"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/custom_dialog_cancle_layout"
+            style="@style/WidthFillStyle"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/custom_dialog_cancle_text"
+                style="@style/Text.SmallFonts"
+                android:layout_margin="20dp"
+                android:text="@string/cancle"
+                android:textColor="#313131" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/custom_dialog_line_view"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#d3d3d3" />
+
+        <LinearLayout
+            android:id="@+id/custom_dialog_confim_layout"
+            style="@style/WidthFillStyle"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/custom_dialog_confim_text"
+                style="@style/Text.SmallFonts"
+                android:layout_margin="20dp"
+                android:text="@string/confirm"
+                android:textColor="#313131" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

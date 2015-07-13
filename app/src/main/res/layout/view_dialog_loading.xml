@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:minHeight="90dp"
+    android:minWidth="180dp"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/dialog_loading_img"
+        style="@style/WrapContentStyle"
+        android:src="@mipmap/progress_bar_rotate_bg"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/dialog_loading_text"
+        style="@style/Text.SmallFonts"
+        android:padding="10dp" 
+        android:textColor="@color/white"/>
+
+</LinearLayout>

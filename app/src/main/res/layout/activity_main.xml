@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/title_bar_layout"
+        layout="@layout/view_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/tab_bar_layout"
+        style="@style/WidthFillStyle"
+        android:layout_alignParentBottom="true"
+        android:background="#f7f7f7">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            style="@style/WidthFillStyle"
+            android:background="@mipmap/tab_bar_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- 温压测量 -->
+
+            <RelativeLayout
+                android:id="@+id/warm_pressing_layout"
+                style="@style/FillParentStyle"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/warm_pressing_image"
+                    style="@style/WrapContentStyle"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/icon_warm_pressing_noraml" />
+
+                <TextView
+                    android:id="@+id/warm_pressing_text"
+                    style="@style/Text.MiddeleSmallFonts"
+                    android:layout_below="@id/warm_pressing_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/main_warm_pressing"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+            <!-- 单阀调试-->
+
+
+            <RelativeLayout
+                android:id="@+id/single_valve_layout"
+                style="@style/FillParentStyle"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/single_valve_image"
+                    style="@style/WrapContentStyle"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/icon_single_valve_normal" />
+                <TextView
+                    android:id="@+id/single_valve_text"
+                    style="@style/Text.MiddeleSmallFonts"
+                    android:text="@string/main_single_valve"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/single_valve_image"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+
+            <!--系统调试 -->
+
+
+            <RelativeLayout
+                android:id="@+id/system_layout"
+                style="@style/FillParentStyle"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/system_valve_image"
+                    style="@style/WrapContentStyle"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/icon_system_valve_normal" />
+                <TextView
+                    android:id="@+id/system_text"
+                    style="@style/Text.MiddeleSmallFonts"
+                    android:text="@string/main_system"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/system_valve_image"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+
+            <!-- 系统设置 -->
+
+
+            <RelativeLayout
+                android:id="@+id/setting_layout"
+                style="@style/FillParentStyle"
+                android:layout_weight="1.0"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/setting_image"
+                    style="@style/WrapContentStyle"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/icon_setting_normal" />
+                <TextView
+                    android:id="@+id/setting_text"
+                    style="@style/Text.MiddeleSmallFonts"
+                    android:text="@string/main_setting"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/setting_image"
+                    android:layout_marginTop="5dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_main_bg_layout"
+        style="@style/FillParentStyle"
+        android:layout_above="@id/tab_bar_layout"
+        android:layout_below="@+id/title_bar_layout"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            style="@style/FillParentStyle"
+            android:orientation="vertical"></FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
